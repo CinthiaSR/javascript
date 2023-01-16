@@ -124,18 +124,28 @@ const mentorsArray = [
     },
   ];
 
-  const AverageByMnetor=((list)=>{
-   const AverageList= list.map(({scores, name})=>{
-       const suma= scores.reduce((accum,iterator)=>{
-            return accum + iterator.score
-        },0)
-        const average= suma/scores.length
-        const newElement= document.createElement('div')
-        newElement.textContent=`${name} ${average}`
-        document.body.appendChild(newElement)
-        // return{name:name, average, }
-    })
-    return AverageList
-  })
-  console.log(AverageByMnetor(mentorsArray))
+  // const AverageByMnetor=((list)=>{
+  //  const AverageList= list.map(({scores, name})=>{
+  //      const suma= scores.reduce((accum,iterator)=>{
+  //           return accum + iterator.score
+  //       },0)
+  //       const average= suma/scores.length
+  //       const newElement= document.createElement('div')
+  //       newElement.textContent=`${name} ${average}`
+  //       document.body.appendChild(newElement)
+  //       // return{name:name, average, }
+  //   })
+  //   return AverageList
+  // })
+  // console.log(AverageByMnetor(mentorsArray))
   
+
+
+
+  //apend child
+  // para meter un elemento dentro de un div
+ const div = document.createElement('div');
+ const h1 = document.createElement('h1')
+ h1.textContent= 'asssss'
+ div.appendChild(h1)
+ document.body.appendChild(div)
